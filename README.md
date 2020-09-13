@@ -17,3 +17,11 @@ git remote add origin git@github.com:yourname/filename.git
 git push -u origin master
 
 git push origin master (2nd and then ignor -u option)
+
+2. How to ignore files in git
+ a). Create .gitignore file in the git folder
+ b). /mtk/ ignore ./mtk and it subfolder
+ c) *.zip ignore all zip file
+ d) /mtk/do.c ignore /mtk/do.c
+ e) !*.zip not ignore zip file
+ 
