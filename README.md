@@ -1,10 +1,14 @@
-git config --global user.email "you@example.com"  
-git config --global user.name "Your Name"
-ssh-keygen -C ‘your@email.address’ -t rsa
-cat /c/user/999/.ssh/github.pub
+git config --global user.email "**@outlook.com"
+git config --global user.name "test"
+ssh-keygen -t rsa -C "**@outlook.com" 
 
+cat ./ssh/id_rsa
 
 Github web: Settings -- SSH ang GPG keys -- New SSH key -- Add SSH key
+Note:
+ ssh -T git@github.com  #Test the connection with github
+ ssh -v git@github.com  #Mode detail about the connection
+ git always find id_rsa file as the ssh key, please rename the key generate above to id_rsa and put in the .ssh
 
 cd ~/Desktop/filename
 git init
